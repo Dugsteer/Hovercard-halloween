@@ -1,0 +1,508 @@
+.main {
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background-image: url("../img/halloween-bg2.jpg");
+    background-size: cover;
+    margin: 0;
+    width: 1000px;
+    height: 600px;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.4);
+    }
+    
+    .ghostdiv {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+    
+    .blind {
+        background-color: lightgray;
+        animation: flash .5s forwards;
+    }
+    
+    @keyframes flash {
+        0% {
+            opacity: 1;
+        }
+    
+        15% {
+            opacity: .5;
+        }
+    
+        30% {
+            opacity: .8;
+        }
+    
+        45% {
+            opacity: .3;
+        }
+    
+        60% {
+            opacity: .9;
+        }
+    
+        75% {
+            opacity: .2;
+        }
+    
+        90% {
+            opacity: .6;
+        }
+    
+        100% {
+            opacity: 0;
+        }
+    }
+    
+    .tombdiv {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: 25%;
+        z-index: 1;
+    }
+    
+    h1 {
+        padding: none;
+        margin: none;
+    }
+    
+    .title {
+        height: 100px;
+        width: 1100px;
+        text-align: center;
+        color: #e8e4c9;
+        font-family: 'Creepster';
+        font-size: 10rem;
+        color:#F75f1c;
+        margin-top: -12rem;
+        /* display: none; */
+    }
+    
+    .playing {
+        height: 600px;
+        width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none;
+    }
+    
+    .input-panel {
+        height:300px;
+        width: 900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        outline: none;
+        z-index: 20;
+    }
+    
+    .underscore {
+        text-align: center;
+        width: 900px;
+        margin-top: 10rem;
+        height: 100px;
+        font-size: 4rem;
+        display:block;
+        font-family: 'Headhunter';
+        color: #F75f1c;
+        z-index: 20q;
+    }
+    
+    .bigger {
+        animation: grow 2s forwards;
+    }
+    
+    @keyframes grow {
+        0% {
+           opacity: 0;
+        }
+        50% {
+           opacity: .5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    .wrongLetters {
+        text-align: center;
+        font-size: 2.4rem;
+        font-family: 'Headhunter';
+        color: lightgray;
+        height: 100px;
+        width: 800px;
+        margin-top: -4rem;
+    }
+    
+    
+    
+    #word {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        margin-top: 6rem;
+        width: 500px;
+        height: 200px;
+        font-family: 'password';
+        font-size: 6rem;
+        background: transparent;
+        background-image: url('../img/scroll.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        outline: none;
+        border: none;
+        color: $color-halloween-orange;
+    
+    }
+    
+    .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 600px;
+        height: 30px;
+    }
+    
+    #wordInput {
+    
+        font-size: 2.4rem;
+        border-radius: 6px;
+        padding: 0 4px;
+        font-family: 'Creepster';
+        color: $color-halloween-orange;
+        background-color: #e8e4c9;
+    }
+    #wordInput1 {
+        font-size:2.4rem;
+        padding: 0 4px;
+        border-radius: 6px;
+        font-family: 'Creepster';
+        color: $color-halloween-orange;
+        background-color: #e8e4c9;
+    }
+    
+    #letter {
+        position: absolute;
+        top: 380px;
+        left: 770px;
+        width: 100px;
+        height: 110px;
+        padding: 3px;
+        font-size: 6rem;
+        color: #555;
+        display: flex;
+        text-align: center;
+        background:#b3b3b3;
+        transform: rotate(-10deg);
+        text-transform: uppercase;
+        font-family: 'Headhunter';
+        outline: none; 
+        border: none;
+        z-index: 20;
+    
+    }
+    
+    
+    #letter:focus,
+    #word:focus,
+    .input-panel:focus,
+    text:focus {
+        outline: none;
+        border:none;
+    }
+    #letterInput {
+        position: absolute;
+        left: 780px;
+        top: 490px;
+        font-size: 4rem;
+        font-family: 'Creepster';
+        width: 100px;
+        height:35px;
+        transform: rotate(-10deg);
+            background: #b3b3b3;
+    outline:none;
+    border: none;
+        color: #e8e4c9;
+        z-index: 20;
+    }
+    
+    
+    .balloon {
+        position: absolute;
+        left: 140px;
+        bottom: -600px;
+    }
+    
+    .riseUp {
+        animation: riser 2s forwards;
+    }
+    
+    @keyframes riser {
+        0% {
+           transform: translateY(-140px);
+        }
+    
+      
+        100% {
+           transform: translateY(-750px);
+        }
+    
+    }
+    
+    
+    
+    #spirit1 {
+        position:absolute;
+        bottom: -210px;
+        left: 100px;
+     
+    }
+    
+    #spirit2 {
+        position: absolute;
+        bottom: -240px;
+        left: 40px;
+    }
+    
+    #spirit3 {
+        position: absolute;
+        bottom: -260px;
+        left: 150px;
+    }
+    
+    #spirit4 {
+        position:absolute;
+        bottom: -215px;
+        left: 200px;
+    }
+    
+    #spirit5 {
+        position: absolute;
+        bottom: -240px;
+        left: 270px;
+    }
+    
+    #spirit6 {
+        position: absolute;
+        bottom: -260px;
+        left: 320px;
+    }
+    #spirit7 {
+        position:absolute;
+        bottom: -210px;
+        left: 400px;
+    }
+    
+    #spirit8 {
+        position: absolute;
+        bottom: -240px;
+        left: 480px;
+    }
+    
+    
+    .spiritRise {
+        animation: rise 2s forwards;
+    }
+    
+    .spiritGrow {
+        transform: scale(120);
+    }
+    
+    .goodByeTomb{
+        animation: vanish .2s forwards;
+    }
+    
+    #tomb1 {
+        position: absolute;
+        left: 100px;
+        bottom: 10px;
+        transition: all 4s ease;
+    }
+    #tomb2 {
+        position: absolute;
+        left: 50px;
+        bottom: 40px;
+    }
+    
+    #tomb3 {
+        position: absolute;
+        left: 150px;
+        bottom: 60px;
+    }
+    #tomb4 {
+        position: absolute;
+        left: 200px;
+        bottom: 15px;
+    }
+    #tomb5 {
+        position: absolute;
+        left: 270px;
+        bottom: 40px;
+    }
+    #tomb6 {
+        position: absolute;
+        left: 320px;
+        bottom: 60px;
+    }
+    #tomb7 {
+        position: absolute;
+        left: 400px;
+        bottom: 10px;
+    }
+    #tomb8 {
+        position: absolute;
+        left: 480px;
+        bottom: 40px;
+    }
+    
+    @keyframes rise {
+        0% {
+            transform: translateY(-100px)
+            }
+    
+        100% {
+            transform: translateY(-580px);
+        }
+    }
+    
+    .jiggle {
+        animation: jiggle .2s infinite;
+    }
+        @keyframes jiggle {
+            0% {
+                transform: rotate(-1deg);
+                }
+            50% {
+               transform: rotate(1deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        
+        }
+    
+        @keyframes vanish {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+
+// .main {
+//     grid-row: 2/3;
+//     align-self: start;
+//     justify-self: center;
+// display: flex;
+// flex-direction: column;
+// align-items: center;
+// justify-content: center;
+// }
+
+// .overlay {
+//     position: relative;
+//   margin-top: 3rem;
+//     width: 1000px;
+//     height: 625px;
+//     transform: all 5s ease;
+//     box-shadow: 3px 3px 3px rgba(0,0,0, 0.6);
+
+//     // border-radius: 8px;
+//     // background: rgba(0,0,0, .9);
+//     // z-index:5;
+// }
+
+// .overlay .after {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     display: none;
+//     transform: all 5s ease;
+    
+// }
+
+// .overlay:hover .after {
+//     display: block;
+//     background: rgba(0,0,0, .4);
+//     transform: all 5s ease;
+// }
+
+// .image-art {
+//     height: 100%;
+//     width: 100%;
+// }
+
+// .image-text {
+//             position: absolute;
+//             font-size: 6rem;
+//             text-align: center;
+//             width: 60%;
+//             height: 30%;
+//             color:white;
+//             top: 50%;
+//             left: 50%;
+//             transform: translateX(-50%);
+//             display: none;
+//             transition: all .2s ease;
+//             z-index: 2000;
+            
+//     }
+        
+//     .overlay:hover .image-text {
+//         display: block;
+//     }
+
+
+// @media only screen and (max-width:$bp-large) {
+//     .overlay {
+//         width: 800px;
+//         height: 500px;
+//     }
+
+//     .image-text {
+//         width: 300;
+//         height: 150;
+//         font-size: 4rem;
+//     }
+// }
+// @media only screen and (max-width:$bp-medium) {
+//     .overlay {
+//         width: 600px;
+//         height: 400px;
+//     }
+
+//     .image-text {
+//         width: 300;
+//         height: 150;
+//         font-size: 4rem;
+//     }
+// }
+// @media only screen and (max-width:$bp-small) {
+//     .overlay {
+//         width: 400px;
+//         height: 250px;
+//     }
+
+//     .image-text {
+//         width: 300;
+//         height: 150;
+//         font-size: 3rem;
+//     }
+// }

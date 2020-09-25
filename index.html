@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fun, free  online transportation alphabet flashcards for learning English">
+    <meta name="keywords" content="Transportation flashcards vehicles online">
+    <title>Transportation A to Z Photo Flashcards</title>
+    <link rel="icon" type="image/png"
+    href="favicon.png";
+  />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <div class="nav-bar" id="navbar">
+        <a href="index.html" class="nav-bar__logo">
+          <svg class="icon-header nav-bar__logo-img">
+            <use xlink:href="sprite2.svg#Buho" onclick="scrollUp()">
+            </use>
+          </svg>    </a>
+        <h3 class="nav-bar__title">Esl-Ology.Com</h3>
+        <div class="nav-bar__title-page">
+          <span class="nav-bar__title-page-main" id="pageTitle">HALLOWEEN HANGMAN</span>
+      </div>
+      <div class="nav-bar__links">
+      <a href="index.html" class="nav-bar__link link3">Home</a>
+      </div>
+    </div>
+
+    <div id="wrapper" class="wrapper">
+
+        <div class="introduction">
+          <div class="introduction__img">
+            <img src="img/halloween-castle.png" alt="decorative">
+          </div>
+          <div class="introduction__text">
+            <p>
+              Choose from a set of Halloween words such as bat, witch, cat and monster, or secretly enter your own word in this seasonally scary game that helps to practise spelling and the pronunciation of letters of the alphabet. Enter the letters one by one onto the big tombstone, but if you get a letter wrong, one of the little tombstones turns into a ghost and flies away. When there are none left — you lose!
+            </p>
+          </div>
+        </div>
+
+        <div class="main" id="gameboard">
+          <div class="ghostdiv" id="ghostdiv">
+            <img class="ghost" id = "spirit1" src="img/little-ghost.png" alt="">
+            <img class="ghost" id = "spirit2" src="img/little-ghost.png" alt="">
+            <img class="ghost" id = "spirit3" src="img/little-ghost.png" alt="">
+            <img class="ghost" id = "spirit4" src="img/little-ghost.png" alt="">
+            <img class="ghost" id = "spirit5" src="img/little-ghost.png" alt="">
+            <img class="ghost" id = "spirit6" src="img/little-ghost.png" alt="">
+            <img class="ghost" id = "spirit7" src="img/little-ghost.png" alt="">
+            <img class="ghost" id = "spirit8" src="img/little-ghost.png" alt="">
+          </div>
+          <div class="tombdiv" id="tombdiv">
+            <img class="tomb" id = "tomb1"src="img/tombstone.png" alt="">
+            <img class="tomb" id = "tomb2"src="img/tombstone.png" alt="">
+            <img class="tomb" id = "tomb3"src="img/tombstone.png" alt="">
+            <img class="tomb" id = "tomb4" src="img/tombstone.png" alt="">
+            <img class="tomb" id = "tomb5" src="img/tombstone.png" alt="">
+            <img class="tomb" id = "tomb6" src="img/tombstone.png" alt="">
+            <img class="tomb" id = "tomb7" src="img/tombstone.png" alt="">
+            <img class="tomb" id = "tomb8" src="img/tombstone.png" alt="">
+          </div>
+    
+            <!-- Position Absolute -->
+            <input type="text" class="letter" id="letter" placeholder="?">
+            <button type="submit" onclick="addLetter();isGood();" class="letter-input" id="letterInput">ENTER</button>
+    
+            
+            <h1 id ="title" class="title">HALLOWEEN HANGMAN</h1>
+    
+            <div class="playing" id="playing">
+                <p id = "underScore" class="underscore">_ _ _ _ </p>
+                <div class="wrongLetters" id="alpha"></div>
+            </div>
+    
+            <div class= "input-panel" id="input-panel">
+                <input type="text" id="word" value='' id="word">
+                <div class="buttons">
+                    <button type="submit" class="btn" onclick="submit();" id="wordInput" placeholder="submit">SUBMIT SECRET WORD </button>
+                <button type="submit" class="btn" onclick="chooseWord();" id="wordInput1" placeholder="submit">TAKE YOUR CHANCES</button>
+                </div>
+            </div>
+            
+            <img src="../img/balloon1.png" class="balloon" id="balloon" alt="">
+
+        </div>
+  
+
+      <div class="links">
+        <p class="links__text">
+          Try our other TEFL Halloween games in class.
+        </p>
+        <div class="links__images">
+          <div class="links__images-1 figure">
+            <a href="matching-halloween.html">
+            <img src="img/MathingHALLOWEEN.jpg" alt=""></a>
+              <figcaption>Halloween Memory Matching</figcaption>
+          </div>
+          <div class="links__images-1 figure">
+            <a href="bingo-halloween.html">
+            <img src="img/HalloweenBingoCard.jpg" alt=""></a>
+              <figcaption>Halloween Bingo with Printable Cards</figcaption>
+          </div>
+      </div>
+
+
+    </div>
+
+    <footer class="footer">
+      <div class="footer__copyright" id="footer">
+        <p>© 2020 Copyright Esl-ology.com & copyright owners.</p>
+        <p>Vectors & images
+    by <a href="https://www.vecteezy.com">Vecteezy</a>&nbsp&nbsp<a href="https://pixabay.com">Pixabay</a> & <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>&nbsp <a href="halloween-hangman.html">  Full credits here.</a> Thanks,guys!</p>
+  </div>
+    </footer>
+
+  <div class="hidden"><img src="sprite2.svg" style="display: none">
+      <script>
+    <!--//--><![CDATA[//><!--
+    var images = new Array();
+      function preload(){
+        for(i=0; i<preload.arguments.length; i++){
+          images[i] = new Image();
+          images[i].src = preload.arguments[i];
+        }
+      }
+    preload(
+      "balloon1.png",
+  "halloween-bg2.jpg",
+  "halloween-castle.png",
+  "halloween-end.jpg",
+  "little-ghost.png",
+  "scroll.png",
+  "tombstone.png"
+    )
+      //--><!]]>
+    </script>
+  </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
