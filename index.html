@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fun, free  online transportation alphabet flashcards for learning English">
-    <meta name="keywords" content="Transportation flashcards vehicles online">
-    <title>Transportation A to Z Photo Flashcards</title>
+    <meta name="description" content="A fun, free  online Halloween flashcards for learning English">
+    <meta name="keywords" content="Halloween online flashcards">
+    <title>Halloween Hovercards — online flashcards for learning English vocabulary</title>
     <link rel="icon" type="image/png"
     href="favicon.png";
   />
@@ -21,7 +21,7 @@
           </svg>    </a>
         <h3 class="nav-bar__title">Esl-Ology.Com</h3>
         <div class="nav-bar__title-page">
-          <span class="nav-bar__title-page-main" id="pageTitle">HALLOWEEN HANGMAN</span>
+          <span class="nav-bar__title-page-main" id="pageTitle">HALLOWEEN HOVERCARDS</span>
       </div>
       <div class="nav-bar__links">
       <a href="index.html" class="nav-bar__link link3">Home</a>
@@ -41,52 +41,24 @@
           </div>
         </div>
 
-        <div class="main" id="gameboard">
-          <div class="ghostdiv" id="ghostdiv">
-            <img class="ghost" id = "spirit1" src="img/little-ghost.png" alt="">
-            <img class="ghost" id = "spirit2" src="img/little-ghost.png" alt="">
-            <img class="ghost" id = "spirit3" src="img/little-ghost.png" alt="">
-            <img class="ghost" id = "spirit4" src="img/little-ghost.png" alt="">
-            <img class="ghost" id = "spirit5" src="img/little-ghost.png" alt="">
-            <img class="ghost" id = "spirit6" src="img/little-ghost.png" alt="">
-            <img class="ghost" id = "spirit7" src="img/little-ghost.png" alt="">
-            <img class="ghost" id = "spirit8" src="img/little-ghost.png" alt="">
-          </div>
-          <div class="tombdiv" id="tombdiv">
-            <img class="tomb" id = "tomb1"src="img/tombstone.png" alt="">
-            <img class="tomb" id = "tomb2"src="img/tombstone.png" alt="">
-            <img class="tomb" id = "tomb3"src="img/tombstone.png" alt="">
-            <img class="tomb" id = "tomb4" src="img/tombstone.png" alt="">
-            <img class="tomb" id = "tomb5" src="img/tombstone.png" alt="">
-            <img class="tomb" id = "tomb6" src="img/tombstone.png" alt="">
-            <img class="tomb" id = "tomb7" src="img/tombstone.png" alt="">
-            <img class="tomb" id = "tomb8" src="img/tombstone.png" alt="">
-          </div>
-    
-            <!-- Position Absolute -->
-            <input type="text" class="letter" id="letter" placeholder="?">
-            <button type="submit" onclick="addLetter();isGood();" class="letter-input" id="letterInput">ENTER</button>
-    
-            
-            <h1 id ="title" class="title">HALLOWEEN HANGMAN</h1>
-    
-            <div class="playing" id="playing">
-                <p id = "underScore" class="underscore">_ _ _ _ </p>
-                <div class="wrongLetters" id="alpha"></div>
-            </div>
-    
-            <div class= "input-panel" id="input-panel">
-                <input type="text" id="word" value='' id="word">
-                <div class="buttons">
-                    <button type="submit" class="btn" onclick="submit();" id="wordInput" placeholder="submit">SUBMIT SECRET WORD </button>
-                <button type="submit" class="btn" onclick="chooseWord();" id="wordInput1" placeholder="submit">TAKE YOUR CHANCES</button>
-                </div>
-            </div>
-            
-            <img src="../img/balloon1.png" class="balloon" id="balloon" alt="">
-
+      
+        <div class="main">
+          <div id="overlay" class="overlay">
+            <img id="image-art" class="image-art" src="img/bat.jpg" alt="">
+          <div class="after"></div>
+              <p id="image-text" class="image-text">Firetruck</p>
         </div>
-  
+
+        <div class="buttons">
+          <div class="buttons__icon" onclick="goBackwards()">
+            <img class="buttons__icon-img arrow1" src="img/right-arrow-halloween.png" alt="">
+          </div>
+            <p class="count" id="count">2/20</p>
+          <div class="buttons__icon" onclick="goForwards()">
+            <img class="buttons__icon-img arrow2" src="img/right-arrow-halloween.png" alt="">
+          </div>
+        </div>
+  </div>
 
       <div class="links">
         <p class="links__text">
@@ -94,9 +66,9 @@
         </p>
         <div class="links__images">
           <div class="links__images-1 figure">
-            <a href="matching-halloween.html">
-            <img src="img/MathingHALLOWEEN.jpg" alt=""></a>
-              <figcaption>Halloween Memory Matching</figcaption>
+            <a href="hangman-halloween.html">
+            <img src="img/HangmanPic.jpg" alt=""></a>
+              <figcaption>Halloween Hangman</figcaption>
           </div>
           <div class="links__images-1 figure">
             <a href="bingo-halloween.html">
@@ -127,13 +99,31 @@
         }
       }
     preload(
-      "balloon1.png",
+      "bat.jpg",
   "halloween-bg2.jpg",
-  "halloween-castle.png",
+  "halloween-castle.jpg",
   "halloween-end.jpg",
-  "little-ghost.png",
-  "scroll.png",
-  "tombstone.png"
+  "black-cat.jpg",
+  "broomstick.jpg",
+  "candy.jpg",
+  "cauldron.jpg",
+  "clown.jpg",
+  "fancy-dress.jpg",
+  "frankenstein.jpg",
+  "ghost.jpg",
+  "monster.jpg",
+  "moon.jpg",
+  "mummy.jpg",
+  "pumpkin.jpg",
+  "right-arrow-halloween.png",
+  "skeleton.jpg",
+  "skull.jpg",
+  "vampire.jpg",
+  "werewolf.jpg",
+  "witch.jpg",
+  "wizard.jpg",
+  "zombie.jpg"
+ 
     )
       //--><!]]>
     </script>
