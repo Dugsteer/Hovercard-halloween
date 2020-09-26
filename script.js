@@ -3,6 +3,14 @@ const count = document.getElementById("count");
 let imageArt = document.getElementById('image-art');
 let imageText = document.getElementById('image-text');
 
+const loader = document.getElementById("loaderDiv");
+
+function stopLoader() {
+  loader.classList.add('stop');
+}
+
+setTimeout(stopLoader, 1000);
+
 var imageList = [
   "bat.jpg",
   "black-cat.jpg",

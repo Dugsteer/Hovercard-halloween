@@ -5,12 +5,12 @@
     justify-content: center;
     background-color: $color-halloween-background;
     margin: 0 auto;
-    grid-template-rows:1fr 1.5fr 1fr;
+    grid-template-rows:1.5fr 1fr 1fr;
   
     @media only screen and (max-width:$bp-large){
-      grid-template-rows: 1fr 1.2fr 1fr;
+      grid-template-rows: 1.2fr 1fr 1fr;
     }
     @media only screen and (max-width:$bp-medium){
-      grid-template-rows: 1fr .8fr 1fr;
+      grid-template-rows: .8fr 1fr 1fr;
     }
   }
