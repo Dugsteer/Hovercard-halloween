@@ -1,5 +1,6 @@
 .links {
     grid-row: 3/4;
+    grid-column: 2/3;
     width: 700px;
     height: 400px;
     display: flex;
@@ -27,7 +28,7 @@
 
 &__text {
     margin-bottom: 3rem;
-    color: $color-halloween;
+    color: $color-halloween-background;
     font-size: 2rem;
      
  }

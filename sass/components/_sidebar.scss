@@ -1,0 +1,149 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1.5rem;
+  grid-row: 1/4;
+  grid-column: 1/2;
+  height: 100%;
+  width: 16vw;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+
+  @media only screen and (max-width:$bp-small) {
+    width: 24vw;
+  
+}
+
+@media only screen and (max-width:$bp-smallest) {
+  display: none;
+
+}
+
+
+ul li {
+  list-style-type: none;
+  width: 100%;
+  
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: $color-halloween-background;
+  width: 100%;
+  height: 3rem;
+  
+  &:hover {
+    background-color: $color-light-grey;
+  }
+}
+
+&__subtitle {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dcd7eb;
+  border-top: 1px solid $color-halloween;
+  height: 4rem;
+  line-height: 1.6;
+  padding-right: 1rem;
+  margin: 0;
+  width: 100%;
+  cursor: pointer;
+
+
+
+
+  i {
+    position: absolute;
+    right: 2.2rem;
+    top: 20%;
+  }
+
+}
+  
+
+  
+
+  &__instructions {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+
+    ul,
+    li {
+      list-style-type: none;
+    }
+  }
+
+  &__close:hover::after {
+    color: $color-blue;
+  }
+
+  &__close::after {
+    content: 'x';
+    margin-left: 11vw;
+    font-size: 3vw;
+    z-index: 4;
+    color: $color-orange;
+  }
+
+.youtube {
+  height: 40px;
+  width: auto;
+  margin-top: 8rem;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  box-shadow: none;
+}
+
+  &__set {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    height: auto;
+    transform: translateY(-0.5rem);
+    text-transform: uppercase;
+    background-color: $color-green;
+    color: $color-white;
+    margin-top: 2rem;
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+}
+.moveSidebar {
+  display: none;
+  width: 0;
+  background-color: $color-light-grey;
+
+
+}
+
+
+#subList1,
+#subList2,
+#subList3,
+#subList4 {
+  display: inline-block;
+}
+
+
+.icon {
+  width: 3rem;
+  height: 3rem;
+  fill: currentColor;
+
+  &:hover {
+    fill: $color-slate;
+  }
+
+}
+
+ 

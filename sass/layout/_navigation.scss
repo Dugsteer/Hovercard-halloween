@@ -3,9 +3,16 @@
   color: $color-halloween-white;
   display: grid;
   height: 7rem;
-  width: 100vw;
-  grid-template-columns: 5vw 8vw 15vw 45vw 18vw 5vw;
+  width: 1200px;
+  margin: auto;
+  box-shadow: $box-shadow-large;
+  border: 1px solid $color-halloween;
+  grid-template-columns: 3vw 7vw 15vw 50vw 25vw;
   z-index: 5;
+
+  @media only screen and (max-width: $bp-largest){
+    width: 100vw;
+  }
 
   &__logo{
     grid-column: 2/3;
