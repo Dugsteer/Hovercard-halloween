@@ -10,6 +10,7 @@
     href="favicon.png";
   />
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="csi.min.js"></script>
 </head>
 <body>
 
@@ -39,10 +40,20 @@
       </div>
       <div class="nav-bar__links">
       <a href="index.html" class="nav-bar__link link3">Home</a>
-      </div>
+      <svg viewBox="0 0 100 80" width="40" height="20" onclick="toggler();" id="menu" class="menu">
+        <rect width="100" height="12"></rect>
+        <rect y="30" width="100" height="12"></rect>
+        <rect y="60" width="100" height="12"></rect>
+      </svg>      </div>
     </div>
+    
 
     <div id="wrapper" class="wrapper">
+
+      <div class="sidebar-container" id="conto">
+    <div data-include="sidebar.html">
+    </div>
+  </div>
 
         <div class="introduction">
           <div class="introduction__img">
@@ -77,7 +88,7 @@
 
       <div class="links">
         <h2 class="links__text">
-          Try our other TEFL Halloween games in class.
+          Try our other TEFL Halloween games.
         </h2>
         <div class="links__images">
           <div class="links__images-1 figure">
@@ -93,6 +104,7 @@
       </div>
 
 
+    </div>
     </div>
 
     <footer class="footer">
@@ -114,30 +126,28 @@
         }
       }
     preload(
-      "bat.jpg",
-  "halloween-bg2.jpg",
-  "halloween-castle.jpg",
-  "halloween-end.jpg",
-  "black-cat.jpg",
-  "broomstick.jpg",
-  "candy.jpg",
-  "cauldron.jpg",
-  "clown.jpg",
-  "fancy-dress.jpg",
-  "frankenstein.jpg",
-  "ghost.jpg",
-  "monster.jpg",
-  "moon.jpg",
-  "mummy.jpg",
-  "pumpkin.jpg",
-  "right-arrow-halloween.png",
-  "skeleton.jpg",
-  "skull.jpg",
-  "vampire.jpg",
-  "werewolf.jpg",
-  "witch.jpg",
-  "wizard.jpg",
-  "zombie.jpg"
+      "img/bat.jpg",
+  "img/halloween-castle.png",
+  "img/black-cat.jpg",
+  "img/broomstick.jpg",
+  "img/candy.jpg",
+  "img/cauldron.jpg",
+  "img/clown.jpg",
+  "img/fancy-dress.jpg",
+  "img/frankenstein.jpg",
+  "img/ghost.jpg",
+  "img/monster.jpg",
+  "img/moon.jpg",
+  "img/mummy.jpg",
+  "img/pumpkin.jpg",
+  "img/right-arrow-halloween.png",
+  "img/skeleton.jpg",
+  "img/skull.jpg",
+  "img/vampire.jpg",
+  "img/werewolf.jpg",
+  "img/witch.jpg",
+  "img/wizard.jpg",
+  "img/zombie.jpg"
  
     )
       //--><!]]>

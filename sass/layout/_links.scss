@@ -1,5 +1,6 @@
 .links {
     grid-row: 3/4;
+    grid-column: 2/3;
     width: 700px;
     height: 400px;
     display: flex;
@@ -24,10 +25,17 @@
         height: 300px;
         
        }
+    @media only screen and (max-width:$bp-smallest){
+        justify-content: center;
+        width: 350px;
+        height: 270px;
+        
+       }
 
 &__text {
     margin-bottom: 3rem;
-    color: $color-halloween;
+    margin-top: 2rem;
+    color: $color-halloween-background;
     font-size: 2rem;
      
  }
