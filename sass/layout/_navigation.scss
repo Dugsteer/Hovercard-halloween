@@ -68,7 +68,7 @@
       font-size: 2.4rem;
 
       @media only screen and (max-width: $bp-medium) {
-        font-size: 1.6rem;
+        font-size: 2rem;
       }
 
       &-deco {
@@ -116,11 +116,29 @@
 
     &.link2,
     &.link3 {
-      @media only screen and (max-width: $bp-small) {
+      @media only screen and (max-width: $bp-medium) {
         display: none;
       }
     }
   }
 }
 
+// .link3 {
+//   display: none;
+// }
+
+.menu {
+  fill: $color-halloween-white;
+  align-self: center;
+  cursor: pointer;
+  display: none;
+
+  @media only screen and (max-width: $bp-medium){
+    display: block;
+  }
+
+  &:hover {
+    fill: $color-halloween-orange;
+  }
+}
 

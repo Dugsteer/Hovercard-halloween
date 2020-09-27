@@ -10,6 +10,7 @@
     href="favicon.png";
   />
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="csi.min.js"></script>
 </head>
 <body>
 
@@ -39,149 +40,20 @@
       </div>
       <div class="nav-bar__links">
       <a href="index.html" class="nav-bar__link link3">Home</a>
-      </div>
+      <svg viewBox="0 0 100 80" width="40" height="20" onclick="toggler();" id="menu" class="menu">
+        <rect width="100" height="12"></rect>
+        <rect y="30" width="100" height="12"></rect>
+        <rect y="60" width="100" height="12"></rect>
+      </svg>      </div>
     </div>
+    
 
     <div id="wrapper" class="wrapper">
 
-          <div class="sidebar" id="sidebar">
-        <h3 class="sidebar__close" id="sidebarClose" onclick="openSidebar()"></h3>
-        <h2>TOPICS</h2>
-      <ul class="sidebar__list">
-
-    <h2 class="sidebar__subtitle"onclick="showList6()">Halloween    <svg class="icon">
-            <use xlink:href="sprite5.svg#jack-o-lantern"></use>
-          </svg></h2>
-          <ul class="sidebar__subtitle-list-6" id="subList6">      
-              <a href="flashcard-halloween.html">Flashcards</a>
-            </li>
-            <li>
-              <a href="hangman-halloween.html">Hangman</a>
-            </li>
-            <li>
-              <a href="memory-halloween.html">Memory</a>
-            </li>
-            <li>
-              <a href="bingo-halloween.html">Bingo</a>
-            </li>
-      
-          </ul>
-
-    <h2 class="sidebar__subtitle"onclick="showList0()">Animals    <svg class="icon">
-            <use xlink:href="sprite3.svg#elephant"></use>
-          </svg></h2>
-          <ul class="sidebar__subtitle-list-0" id="subList0">      
-              <a href="flashcard-animals.html">Flashcards</a>
-            </li>
-            <li>
-              <a href="matching-animal.html">Memory</a>
-            </li>
-            <li>
-              <a href="bingo-animals.html">Bingo</a>
-            </li>
-          </ul>
-
-                  <h2 class="sidebar__subtitle"onclick="showList2()">Clothes    <svg class="icon">
-            <use xlink:href="sprite.svg#pants"></use>
-          </svg></h2>
-          <ul class="sidebar__subtitle-list-2" id="subList2">   
-            <li></li>
-              <a href="flashcard-clothes.html">Flashcards</a>
-            </li>
-            <li>
-              <a href="matching-clothes.html">Memory</a>
-            </li>
-            <li>
-              <a href="bingo-clothes.html">Bingo</a>
-            </li>
-          </ul>
-
-                  <h2 class="sidebar__subtitle" onclick="showList3()">Food    <svg class="icon">
-          <use xlink:href="sprite.svg#grapes"></use>
-        </svg></h2>
-        <ul class="sidebar__subtitle-list-3" id="subList3">    
-            <li>
-              <a href="flashcard-food.html">Flashcards</a>
-            </li>
-            <li>
-              <a href="matching-food.html">Memory</a>
-            </li>
-            <li>
-              <a href="bingo-food.html">Bingo
-              </a>
-            </li>
-          </ul>
-
-          <h2 class="sidebar__subtitle" onclick="showList5()">Sport    <svg class="icon">
-            <use xlink:href="sprite4.svg#football"></use>
-          </svg></h2>
-          <ul class="sidebar__subtitle-list-5" id="subList5">   
-            <li>
-              <a href="flashcard-sports.html">Flashcards</a>
-            </li> 
-              <li>
-                <a href="matching-sports.html">Memory</a>
-              </li>
-              <li>
-                <a href="bingo-sports.html">Bingo
-                </a>
-              </li>
-            </ul>
-
-          <h2 class="sidebar__subtitle" onclick="showList1()">Transport
-            <svg class="icon">
-            <use xlink:href="sprite.svg#motorcycle"></use>
-          </svg>
-        </h2>
-          <ul id="subList1" class="sidebar__subtitle-list-1" >
-            <li class="li1">
-              <a href="flashcard-transport.html">Flashcards</a>
-            </li>
-            <li class="li1">
-              <a href="matching-transport.html">Memory</a>
-            </li>
-            <li class="li1">
-              <a href="bingo-transport.html">Bingo</a>
-            </li>
-            <li class="li1">
-              <a href="transport-alphabet.html">A - Z</a>
-            </li>
-          </ul>
-     
-
-  
-  
-     
-        
-          <h2 class="sidebar__subtitle" onclick="showList4()">Fun    <svg class="icon">
-            <use xlink:href="sprite.svg#joystick"></use>
-          </svg></h2>
-          <ul class="sidebar__subtitle-list-4" id="subList4">    
-          
-              <a href="questions-maze.html">Grammar Maze</a>
-            </li>
-            <li>
-              <a href="talk-minute.html">Talking Game</a>
-            </li>
-            <li>
-              <a href="triple-memory.html">Triple Verb Match</a>
-            </li>
-            <li>
-              <a href="weather-fun.html">Weather Fun</a>
-            </li>
-            <li>
-              <a href="countdown-timer.html">Class Timer</a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/channel/UCvl0weUrlWDhQOimqfRmZUA" target="_blank"><img class="youtube" src="img/yt_logo_rgb_light.png"></a>
-            </li>
-          </ul>
-      
-
-     
-      
-       </ul>
+      <div class="sidebar-container" id="conto">
+    <div data-include="sidebar.html">
     </div>
+  </div>
 
         <div class="introduction">
           <div class="introduction__img">
@@ -233,6 +105,7 @@
 
 
     </div>
+    </div>
 
     <footer class="footer">
       <div class="footer__copyright" id="footer">
@@ -253,30 +126,28 @@
         }
       }
     preload(
-      "bat.jpg",
-  "halloween-bg2.jpg",
-  "halloween-castle.jpg",
-  "halloween-end.jpg",
-  "black-cat.jpg",
-  "broomstick.jpg",
-  "candy.jpg",
-  "cauldron.jpg",
-  "clown.jpg",
-  "fancy-dress.jpg",
-  "frankenstein.jpg",
-  "ghost.jpg",
-  "monster.jpg",
-  "moon.jpg",
-  "mummy.jpg",
-  "pumpkin.jpg",
-  "right-arrow-halloween.png",
-  "skeleton.jpg",
-  "skull.jpg",
-  "vampire.jpg",
-  "werewolf.jpg",
-  "witch.jpg",
-  "wizard.jpg",
-  "zombie.jpg"
+      "img/bat.jpg",
+  "img/halloween-castle.png",
+  "img/black-cat.jpg",
+  "img/broomstick.jpg",
+  "img/candy.jpg",
+  "img/cauldron.jpg",
+  "img/clown.jpg",
+  "img/fancy-dress.jpg",
+  "img/frankenstein.jpg",
+  "img/ghost.jpg",
+  "img/monster.jpg",
+  "img/moon.jpg",
+  "img/mummy.jpg",
+  "img/pumpkin.jpg",
+  "img/right-arrow-halloween.png",
+  "img/skeleton.jpg",
+  "img/skull.jpg",
+  "img/vampire.jpg",
+  "img/werewolf.jpg",
+  "img/witch.jpg",
+  "img/wizard.jpg",
+  "img/zombie.jpg"
  
     )
       //--><!]]>

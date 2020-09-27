@@ -29,9 +29,6 @@ html {
   @media only screen and (max-width: 62.5em) {
     html {
       font-size: 50%; } }
-  @media only screen and (max-width: 30em) {
-    html {
-      font-size: 40%; } }
 
 body {
   padding: 0;
@@ -195,19 +192,19 @@ h4 {
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding: 1.5rem;
-  grid-row: 1/4;
-  grid-column: 1/2;
+  padding: 1rem;
   height: 100%;
-  width: 16vw;
-  height: 100%;
-  transition: all 0.2s ease-in-out; }
-  @media only screen and (max-width: 37.5em) {
+  transition: all 0.2s ease-in-out;
+  opacity: 1; }
+  @media only screen and (max-width: 50em) {
     .sidebar {
-      width: 24vw; } }
-  @media only screen and (max-width: 30em) {
-    .sidebar {
-      display: none; } }
+      position: absolute;
+      width: 100vw;
+      z-index: 500;
+      height: auto;
+      padding: 3rem; } }
+  .sidebar h2:first-of-type {
+    margin-top: 3rem; }
   .sidebar ul li {
     list-style-type: none;
     width: 100%; }
@@ -217,7 +214,8 @@ h4 {
     font-size: 2rem;
     color: #594f73;
     width: 100%;
-    height: 3rem; }
+    height: 3rem;
+    padding-left: .5rem; }
     .sidebar a:hover {
       background-color: #eaeaea; }
   .sidebar__subtitle {
@@ -229,8 +227,9 @@ h4 {
     border-top: 1px solid #120437;
     height: 4rem;
     line-height: 1.6;
+    padding-left: .5rem;
     padding-right: 1rem;
-    margin: 0;
+    margin-top: 1rem;
     width: 100%;
     cursor: pointer; }
     .sidebar__subtitle i {
@@ -243,14 +242,6 @@ h4 {
     .sidebar__instructions ul,
     .sidebar__instructions li {
       list-style-type: none; }
-  .sidebar__close:hover::after {
-    color: #368cbf; }
-  .sidebar__close::after {
-    content: 'x';
-    margin-left: 11vw;
-    font-size: 3vw;
-    z-index: 4;
-    color: #f6653c; }
   .sidebar .youtube {
     height: 40px;
     width: auto;
@@ -290,6 +281,23 @@ h4 {
   fill: currentColor; }
   .icon:hover {
     fill: #33363b; }
+
+.sidebar-container {
+  grid-row: 1/4;
+  grid-column: 1/2;
+  height: 100%; }
+  @media only screen and (max-width: 50em) {
+    .sidebar-container {
+      display: none; } }
+
+.block {
+  display: block; }
+
+.sidebar__subtitle:first-of-type {
+  background: #F75F1C; }
+
+.icon {
+  margin-right: 3rem; }
 
 .nav-bar {
   background-color: #120437;
@@ -341,7 +349,7 @@ h4 {
       font-size: 2.4rem; }
       @media only screen and (max-width: 50em) {
         .nav-bar__title-page {
-          font-size: 1.6rem; } }
+          font-size: 2rem; } }
       .nav-bar__title-page-deco {
         height: 4rem;
         width: auto;
@@ -368,9 +376,20 @@ h4 {
     text-decoration: none; }
     .nav-bar__link:hover {
       color: #ffe164; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 50em) {
       .nav-bar__link.link2, .nav-bar__link.link3 {
         display: none; } }
+
+.menu {
+  fill: #e8e4c9;
+  align-self: center;
+  cursor: pointer;
+  display: none; }
+  @media only screen and (max-width: 50em) {
+    .menu {
+      display: block; } }
+  .menu:hover {
+    fill: #F75F1C; }
 
 .introduction {
   grid-row: 2/3;
@@ -420,6 +439,9 @@ h4 {
       height: 100%; }
   .introduction__text {
     width: 60%; }
+    @media only screen and (max-width: 37.5em) {
+      .introduction__text {
+        width: 90%; } }
   .introduction__text p {
     font-size: 2rem;
     line-height: 2.8rem; }
@@ -444,18 +466,16 @@ h4 {
   background-color: #594f73;
   margin: 0 auto;
   grid-template-rows: auto auto auto;
-  grid-template-columns: 16vw 1fr; }
+  grid-template-columns: 23rem 1fr; }
   @media only screen and (max-width: 75em) {
     .wrapper {
       width: 100vw; } }
   @media only screen and (max-width: 62.5em) {
     .wrapper {
-      grid-template-rows: 1.2fr 1fr 1fr;
-      grid-template-columns: 0 1fr; } }
+      grid-template-columns: 28rem 1fr; } }
   @media only screen and (max-width: 50em) {
     .wrapper {
-      grid-template-rows: .8fr 1fr 1fr;
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 0 1fr; } }
 
 .main {
   grid-row: 1/2;
@@ -513,8 +533,8 @@ h4 {
 
 @media only screen and (max-width: 62.5em) {
   .overlay {
-    width: 800px;
-    height: 500px; }
+    width: 700px;
+    height: 450px; }
   .image-text {
     width: 300;
     height: 150;
@@ -603,12 +623,6 @@ h4 {
     line-height: 1.5; }
     .footer__copyright p {
       font-size: 1.2rem; }
-  @media only screen and (max-width: 37.5em) {
-    .footer {
-      position: fixed;
-      bottom: 0px;
-      left: 0px;
-      width: 100%; } }
 
 #footer a {
   color: #F75F1C; }

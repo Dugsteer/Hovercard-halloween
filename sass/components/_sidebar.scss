@@ -2,71 +2,65 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  padding: 1.5rem;
-  grid-row: 1/4;
-  grid-column: 1/2;
-  height: 100%;
-  width: 16vw;
+  padding:1rem;
   height: 100%;
   transition: all 0.2s ease-in-out;
-
-  @media only screen and (max-width:$bp-small) {
-    width: 24vw;
-  
-}
-
-@media only screen and (max-width:$bp-smallest) {
-  display: none;
-
-}
+  opacity: 1;
 
 
-ul li {
-  list-style-type: none;
-  width: 100%;
-  
-}
-
-a {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  color: $color-halloween-background;
-  width: 100%;
-  height: 3rem;
-  
-  &:hover {
-    background-color: $color-light-grey;
-  }
-}
-
-&__subtitle {
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #dcd7eb;
-  border-top: 1px solid $color-halloween;
-  height: 4rem;
-  line-height: 1.6;
-  padding-right: 1rem;
-  margin: 0;
-  width: 100%;
-  cursor: pointer;
-
-
-
-
-  i {
+  @media only screen and (max-width: $bp-medium) {
     position: absolute;
-    right: 2.2rem;
-    top: 20%;
+    width: 100vw;
+    z-index: 500;
+    height: auto;
+    padding: 3rem;
   }
 
-}
-  
+  & h2:first-of-type {
+    margin-top: 3rem;
+  }
 
-  
+  ul li {
+    list-style-type: none;
+    width: 100%;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    color: $color-halloween-background;
+    width: 100%;
+    height: 3rem;
+    padding-left: .5rem;
+
+    &:hover {
+      background-color: $color-light-grey;
+    }
+  }
+
+  &__subtitle {
+    display: flex;
+    position: relative;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #dcd7eb;
+    border-top: 1px solid $color-halloween;
+    height: 4rem;
+    line-height: 1.6;
+    padding-left: .5rem;
+    padding-right: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    cursor: pointer;
+
+
+    i {
+      position: absolute;
+      right: 2.2rem;
+      top: 20%;
+    }
+  }
 
   &__instructions {
     margin-bottom: 2rem;
@@ -78,27 +72,27 @@ a {
     }
   }
 
-  &__close:hover::after {
-    color: $color-blue;
-  }
+  // &__close:hover::after {
+  //   color: $color-blue;
+  // }
 
-  &__close::after {
-    content: 'x';
-    margin-left: 11vw;
-    font-size: 3vw;
-    z-index: 4;
-    color: $color-orange;
-  }
+  // &__close::after {
+  //   content: "x";
+  //   margin-left: 11vw;
+  //   font-size: 3vw;
+  //   z-index: 4;
+  //   color: $color-orange;
+  // }
 
-.youtube {
-  height: 40px;
-  width: auto;
-  margin-top: 8rem;
-  border: none;
-  outline: none;
-  padding: 10px 0;
-  box-shadow: none;
-}
+  .youtube {
+    height: 40px;
+    width: auto;
+    margin-top: 8rem;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    box-shadow: none;
+  }
 
   &__set {
     display: block;
@@ -116,16 +110,12 @@ a {
   p {
     font-weight: bold;
   }
-
 }
 .moveSidebar {
   display: none;
   width: 0;
   background-color: $color-light-grey;
-
-
 }
-
 
 #subList1,
 #subList2,
@@ -133,7 +123,6 @@ a {
 #subList4 {
   display: inline-block;
 }
-
 
 .icon {
   width: 3rem;
@@ -143,7 +132,26 @@ a {
   &:hover {
     fill: $color-slate;
   }
-
 }
 
- 
+.sidebar-container {
+  grid-row: 1/4;
+  grid-column: 1/2;
+  height: 100%;
+
+  @media only screen and (max-width: $bp-medium){
+    display: none;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.sidebar__subtitle:first-of-type {
+  background: $color-halloween-orange;
+}
+
+.icon {
+  margin-right: 3rem;
+}

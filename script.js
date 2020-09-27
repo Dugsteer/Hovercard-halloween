@@ -1,12 +1,21 @@
+const menu = document.getElementById('menu');
+const sidey = document.getElementById('conto');
+
+function toggler(){
+  sidey.classList.toggle('block');
+
+}
+
+
 //CHANGE CARDS
 const count = document.getElementById("count");
-let imageArt = document.getElementById('image-art');
-let imageText = document.getElementById('image-text');
+let imageArt = document.getElementById("image-art");
+let imageText = document.getElementById("image-text");
 
 const loader = document.getElementById("loaderDiv");
 
 function stopLoader() {
-  loader.classList.add('stop');
+  loader.classList.add("stop");
 }
 
 setTimeout(stopLoader, 1000);
@@ -31,19 +40,18 @@ var imageList = [
   "werewolf.jpg",
   "witch.jpg",
   "wizard.jpg",
-  "zombie.jpg"
+  "zombie.jpg",
 ];
 
 let y = imageText.innerHTML;
 let z = y.concat(".jpg");
 let x = imageList.indexOf(z);
 
-
 function goForwards() {
   if (x < imageList.length - 1) {
     x++;
-    imageArt.src =  `/img/${imageList[x]}`;
-   imageText.textContent = `${imageList[x].slice(0, -4)}`;
+    imageArt.src = `/img/${imageList[x]}`;
+    imageText.textContent = `${imageList[x].slice(0, -4)}`;
     count.innerHTML = `${x + 1}/${imageList.length}`;
     return x;
   } else {
@@ -51,7 +59,7 @@ function goForwards() {
     imageText.textContent = `${imageList[imageList.length - 1].slice(0, -4)}`;
     count.innerHTML = `${imageList.length}/${imageList.length}`;
     x = 0;
-    x = imageList.length -1;
+    x = imageList.length - 1;
     return x;
   }
 }
@@ -59,7 +67,7 @@ function goForwards() {
 function goBackwards() {
   if (x > 0) {
     x--;
-    imageArt.src =  `/img/${imageList[x]}`;
+    imageArt.src = `/img/${imageList[x]}`;
     imageText.textContent = `${imageList[x].slice(0, -4)}`;
     count.innerHTML = `${x + 1}/${imageList.length}`;
     return x;
@@ -74,4 +82,4 @@ function goBackwards() {
 
 goForwards();
 goBackwards();
-
+menu.addEventListener('click', toggler());

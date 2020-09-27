@@ -7,20 +7,18 @@
     justify-content: center;
     background-color: $color-halloween-background;
     margin: 0 auto;
-    // grid-template-rows:1fr .8fr 1fr;
     grid-template-rows:auto auto auto;
-    grid-template-columns: 16vw 1fr;
+    grid-template-columns: 23rem 1fr;
   
     @media only screen and (max-width:$bp-largest){
       width: 100vw;
     }
 
     @media only screen and (max-width:$bp-large){
-      grid-template-rows: 1.2fr 1fr 1fr;
-      grid-template-columns: 0 1fr;
+      grid-template-columns: 28rem 1fr;
     }
+
     @media only screen and (max-width:$bp-medium){
-      grid-template-rows: .8fr 1fr 1fr;
-      grid-template-columns: 1fr;
+      grid-template-columns: 0 1fr;
     }
   }
