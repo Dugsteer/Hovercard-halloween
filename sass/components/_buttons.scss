@@ -4,9 +4,9 @@
     justify-content: center;
     grid-row: 3/4;
     grid-column: 1/2;
-    width: 60%;
+    width: 100%;
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 3rem;
     height: 5vw;
     color: $color-halloween-white;
 
@@ -83,7 +83,7 @@
 
     @media only screen and(max-width: $bp-medium){
         height: 4rem;
-        width: 10rem;
+        width: 20rem;
     }
   
 }

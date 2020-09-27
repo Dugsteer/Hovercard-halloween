@@ -27,6 +27,8 @@
 
   &__main{
     grid-column: 4/5;
+    text-align:center;
+
   }
 
   &__link{
@@ -46,6 +48,7 @@
     margin-right: auto;
     align-self: center;
     font-size: 1.6rem;
+
 
     @media only screen and (max-width: $bp-medium) {
       display: none;
@@ -69,6 +72,11 @@
 
       @media only screen and (max-width: $bp-medium) {
         font-size: 2rem;
+      }
+
+      &-main {
+        line-height: 2.4rem;
+        text-align: center;
       }
 
       &-deco {

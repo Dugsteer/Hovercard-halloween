@@ -1,11 +1,18 @@
-const menu = document.getElementById('menu');
-const sidey = document.getElementById('conto');
+const menu = document.getElementById("menu");
+const sidey = document.getElementById("conto");
+const blue = window.matchMedia("(max-width: 800px)");
 
-function toggler(){
-  sidey.classList.toggle('block');
-
+function myFunction(x) {
+  if (blue.matches) {
+    sidey.classList.remove("block");
+  }
 }
 
+function toggler() {
+  sidey.classList.toggle("block");
+}
+
+myFunction(blue);
 
 //CHANGE CARDS
 const count = document.getElementById("count");
@@ -82,4 +89,3 @@ function goBackwards() {
 
 goForwards();
 goBackwards();
-menu.addEventListener('click', toggler());

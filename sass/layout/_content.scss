@@ -101,3 +101,11 @@ justify-content: center;
         font-size: 6rem;
     }
 }
+
+@media only screen and (max-width: $bp-smallest) {
+    .overlay {
+        width: 350px;
+        height: 270px;
+    }
+
+  }
