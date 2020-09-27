@@ -7,7 +7,7 @@
   margin: auto;
   box-shadow: $box-shadow-large;
   border: 1px solid $color-halloween;
-  grid-template-columns: 3vw 7vw 15vw 50vw 25vw;
+  grid-template-columns: 3% 7% 15% 50% 25%;
   z-index: 5;
 
   @media only screen and (max-width: $bp-largest){
