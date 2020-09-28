@@ -68,7 +68,7 @@ justify-content: center;
 @media only screen and (max-width:$bp-large) {
     .overlay {
         width: 700px;
-        height: 450px;
+        height: 440px;
     }
 
     .image-text {
@@ -80,7 +80,7 @@ justify-content: center;
 @media only screen and (max-width:$bp-medium) {
     .overlay {
         width: 600px;
-        height: 400px;
+        height: 375px;
     }
 
     .image-text {
@@ -92,7 +92,7 @@ justify-content: center;
 @media only screen and (max-width:$bp-small) {
     .overlay {
         width: 400px;
-        height: 250px;
+        height: 280px;
     }
 
     .image-text {
@@ -105,7 +105,7 @@ justify-content: center;
 @media only screen and (max-width: $bp-smallest) {
     .overlay {
         width: 350px;
-        height: 270px;
+        height: 220px;
     }
 
   }

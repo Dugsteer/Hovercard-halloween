@@ -4,6 +4,7 @@
   display: flex;
   width: 1200px;
   margin: auto;
+  box-shadow: $box-shadow-large;
   border: 1px solid $color-halloween;
   flex-direction: column;
   align-items: center;
@@ -27,12 +28,6 @@
     }
   }
 
-  // @media only screen and (max-width: $bp-small){
-  //   position: fixed;
-  //   bottom: 0px;
-  //   left: 0px;
-  //   width: 100%;
-  // }
 }
 
 #footer a{

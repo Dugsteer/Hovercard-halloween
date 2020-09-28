@@ -542,7 +542,7 @@ h4 {
 @media only screen and (max-width: 62.5em) {
   .overlay {
     width: 700px;
-    height: 450px; }
+    height: 440px; }
   .image-text {
     width: 300;
     height: 150;
@@ -551,7 +551,7 @@ h4 {
 @media only screen and (max-width: 50em) {
   .overlay {
     width: 600px;
-    height: 400px; }
+    height: 375px; }
   .image-text {
     width: 300;
     height: 150;
@@ -560,7 +560,7 @@ h4 {
 @media only screen and (max-width: 37.5em) {
   .overlay {
     width: 400px;
-    height: 250px; }
+    height: 280px; }
   .image-text {
     width: 300;
     height: 150;
@@ -569,7 +569,7 @@ h4 {
 @media only screen and (max-width: 30em) {
   .overlay {
     width: 350px;
-    height: 270px; } }
+    height: 220px; } }
 
 .links {
   grid-row: 3/4;
@@ -626,6 +626,7 @@ h4 {
   display: flex;
   width: 1200px;
   margin: auto;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
   border: 1px solid #120437;
   flex-direction: column;
   align-items: center;
